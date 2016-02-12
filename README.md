@@ -3,7 +3,7 @@
 Este repositorio tiene como fin recibir las soluciones de los asistentes al Training 2016-0.
 
 ###<i class="icon-folder-open"></i> Ruta de Archivos
-Las soluciones deberán ser subidas con el nombre del creador [**Nombre.extensión**].
+Las soluciones deberán ser subidas con el nombre del creador [**Nombre.extensión**].<br>
 Siguiendo la ruta [**Training-2016/Juez/NumeroProblema NombreProblema/Archivo**].
 
 >**Nota:** Todas las soluciones deben cumplir con el requisito de haber sido aceptadas en sus respectivos jueces.
@@ -32,5 +32,5 @@ Python
 
 De 9:10am hasta 12:20pm
 
-L - X - V: Lab04(Pabellón A)
+L - X - V: Lab04(Pabellón A)<br>
 M - J: A207
