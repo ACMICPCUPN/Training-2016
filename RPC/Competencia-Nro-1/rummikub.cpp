@@ -24,33 +24,33 @@ string suits = "bgry";
 
 int main()
 {
-    int T, M, n, group[101][4];
+    int T, M, n, group[4][101];
     char c;        
     set<Ficha, cmp> v;
     bool is_group, is_run;
-
+    
     cin >> T;
     while(T--)
     {
         cin >> M;
         is_run = is_group = false;
-        for (int i = 0; i < 101; ++i)        
+        for (int i = 0; i < 4; ++i)        
             memset(group[i], 0, sizeof(group[i]));
         for(short i = 0, ii; i < M; i++)
         {
             cin >> n >> c;            
             v.insert(make_pair(n, c));
             ii = suits.find(c);            
-            if(not group[n][ii])
-                group[n][ii]++;
-            if((group[n][0] + group[n][1] + group[n][2] + group[n][3]) >= 3)
+            if(not group[ii][n])
+                group[ii][n]++;
+            if((group[0][n] + group[1][n] + group[2][n] + group[3][n]) >= 3)
                 is_group = true;
         }
         if(is_group)
             cout << "YES" << endl;
         else
         {
-            int len = v.size();            
+            int len = v.size();
             vector<Ficha> arr(v.begin(), v.end());            
             for(int i = 0; !is_run and i < len - 2; i++)
             {
