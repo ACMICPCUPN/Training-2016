@@ -21,8 +21,7 @@ int _stoi(string s)
 
 void sieve(int tam){
 	primes.set();
-    primes[0] = false;
-    primes[1] = false;
+    primes[0] = primes[1] = false;
     for(int i = 2; i*i <= tam; ++i)
 		if(primes[i])
 			for(int h = 2; i*h <= tam; ++h)
