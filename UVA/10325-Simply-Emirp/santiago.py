@@ -1,7 +1,7 @@
 # UVA ya acepta Python3 
 
 def primes_upto(limit):
-    is_prime = [False, True] + [True] * (limit - 1) 
+    is_prime = [False] + [True] * limit 
     for n in range(2, int(limit**0.5 + 1.5)): # stop at ``sqrt(limit)``
         if is_prime[n]:
             for i in range(n*n, limit+1, n):
